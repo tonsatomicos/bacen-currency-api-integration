@@ -5,7 +5,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
-Este projeto visa criar um "sistema" em Python para consumir a API do Banco Central, obtendo os valores de fechamento de venda e compra de cotação de moedas estrangeiras. Utilizando a biblioteca requests para fazer as requisições HTTP e o Docker com PostgreSQL para armazenar os dados, a iniciativa busca facilitar o acesso e análise dessas informações de forma direta e eficiente.
+Este projeto envolve o desenvolvimento de uma solução em Python para acessar e consumir a API do Banco Central, obtendo os valores de fechamento de venda e compra de cotação de moedas estrangeiras. Utilizando a biblioteca requests para fazer as requisições HTTP e o Docker com PostgreSQL para armazenar os dados, a iniciativa busca facilitar o acesso e análise dessas informações de forma direta e eficiente.
 
 ## Diagrama de Fluxo
 
