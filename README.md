@@ -9,7 +9,7 @@ Este projeto visa criar um "sistema" em Python para consumir a API do Banco Cent
 
 ## Diagrama de Fluxo
 
-
+![Diagram](https://github.com/tonsatomicos/bacen-ptax-data-processing/blob/main/assets/diagram.png?raw=true)
 
 Sinta-se à vontade para clonar, adaptar e ajustar o projeto conforme necessário. Consulte as instruções abaixo, se precisar. :alien:
 
