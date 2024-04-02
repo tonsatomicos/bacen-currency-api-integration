@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "dtp-ptax-bacen"
+name = "bacen-ptax-data-processing"
 version = "0.1.0"
 description = ""
 authors = ["Ant4res <pr1v4t3.lm@gmail.com>"]
@@ -10,8 +10,6 @@ python = "^3.12"
 pandas = "^2.2.1"
 requests = "^2.31.0"
 jupyter = "^1.0.0"
-pyspark = "^3.5.1"
-sparksql-magic = "^0.0.3"
 
 [tool.poetry.group.dev.dependencies]
 ipykernel = "^6.29.3"
