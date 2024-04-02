@@ -58,7 +58,7 @@ Você pode escolher entre utilizar o Docker para subir um banco PostgreSQL ou in
 
 #### Outras maneiras
 
-Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>sql</code>.
+Segue tutorial aleatório da **<a href="https://youtu.be/L_2l8XTCPAE?si=-OJ21qv_48BgHFq2">Hashtag Treinamentos</a>**. <br>Script de criação da tabela disponibilizado em <code>src/sql</code>.
 
 ### Conclusão
 
