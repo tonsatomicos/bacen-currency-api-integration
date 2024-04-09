@@ -35,7 +35,7 @@ class Collector:
                 print('Failed to get data from API.')
                 
         except requests.exceptions.RequestException as e:
-            print('Failed to get data from API. Error: ', e)
+            print(f'Failed to get data from API. Error: {e}')
         
         finally:
             if 'response' in locals():
@@ -60,7 +60,7 @@ class Collector:
             self.transform_checkin = True
 
         except Exception as e:
-            print('Error when applying transformations: ', e)
+            print(f'Error when applying transformations: {e}')
 
     def authenticate_database(self):
         try:   
@@ -68,10 +68,10 @@ class Collector:
             self.conn_postgres = engine.connect()
 
         except Exception as e:
-            print(f'An error occurred while connecting to the database: {e}')    
+                    print(f'An error occurred while connecting to the database: {e}')    
 
     def load_data(self):
-        try:
+        try:  
             conn = self.conn_postgres
             table_name = self.dbtable
 
