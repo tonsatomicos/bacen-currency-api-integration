@@ -5,7 +5,7 @@
 <img src="http://img.shields.io/static/v1?label=STATUS&message=N/A&color=GREEN&style=for-the-badge"/>
 </p>
 
-Este projeto envolve o desenvolvimento de uma solução em Python para acessar e consumir a API do Banco Central, obtendo os valores de fechamento de venda e compra de cotação de moedas estrangeiras. Utilizando a biblioteca requests para fazer as requisições HTTP e o Docker com PostgreSQL para armazenar os dados, a iniciativa busca facilitar o acesso e análise dessas informações de forma direta e eficiente.
+Este projeto envolve o desenvolvimento de uma solução em Python para acessar e consumir a API do Banco Central, obtendo os valores de fechamento de venda e compra de cotação de moedas estrangeiras. Utilizando a biblioteca requests para fazer as requisições HTTP e o Docker com PostgreSQL para armazenar os dados, buscando facilitar o acesso e análise dessas informações de forma direta e eficiente.
 
 ## Diagrama de Fluxo
 
@@ -77,7 +77,7 @@ Isso irá garantir que as informações sejam persistidas no banco de dados Post
 
 
 ## Considerações Finais
-
+- A documentação pode não estar tão detalhada; talvez seja necessário um certo nível de conhecimento para adaptar o código.
 - Com esse projeto, conseguimos facilmente persistir informações de diversos tipos de moedas, contanto que estejam disponíveis na <a href="https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/aplicacao#!/recursos/Moedas#eyJmb3JtdWxhcmlvIjp7IiRmb3JtYXQiOiJqc29uIiwiJHRvcCI6MTAwfSwicHJvcHJpZWRhZGVzIjpbMCwxLDJdLCJwZXNxdWlzYWRvIjp0cnVlLCJhY3RpdmVUYWIiOiJ0YWJsZSIsImdyaWRTdGF0ZSI6ewMwAzpbewNCAyIEMAQiLANBA30sewNCAyIEMQQiLANBA30sewNCAyIEMgQiLANBA31dLAMxAzp7fSwDMgM6W10sAzMDOnt9LAM0Azp7fSwDNQM6e319LCJwaXZvdE9wdGlvbnMiOnsDYQM6e30sA2IDOltdLANjAzo1MDAsA2QDOltdLANlAzpbXSwDZgM6W10sA2cDOiJrZXlfYV90b196IiwDaAM6ImtleV9hX3RvX3oiLANpAzp7fSwDagM6e30sA2sDOjg1LANsAzpmYWxzZSwDbQM6e30sA24DOnt9LANvAzoiQ29udGFnZW0iLANwAzoiVGFibGUifX0=">base de dados</a> do Banco Central do Brasil (BACEN).
 
 <hr>
