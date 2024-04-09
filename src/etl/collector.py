@@ -68,10 +68,11 @@ class Collector:
             self.conn_postgres = engine.connect()
 
         except Exception as e:
-                    print("An error occurred while connecting to the database: ", e)    
+            print(f'An error occurred while connecting to the database: {e}')    
 
     def load_data(self):
-        try:  
+        try:
+            conn = self.conn_postgres
             table_name = self.dbtable
 
             for index, row in self.dataframe.iterrows():
@@ -82,16 +83,16 @@ class Collector:
                         dt_cadastro = EXCLUDED.dt_cadastro
                     WHERE {table_name}.valor_dia <> EXCLUDED.valor_dia;
                     """)
-                self.conn_postgres.execute(query)
-                self.conn_postgres.commit()
+                conn.execute(query)
+                conn.commit()
 
         except Exception as e:
-            print(f"Error when inserting: {e}")
-            self.conn_postgres.rollback()
+            print(f'Error when inserting: {e}')
+            conn.rollback()
 
         finally:
             if 'conn' in locals():
-                self.conn_postgres.close()                
+                conn.close()                
 
 def main():
     # Collector class configs
