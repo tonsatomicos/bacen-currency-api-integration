@@ -9,7 +9,7 @@ Este projeto envolve o desenvolvimento de uma solução em Python para acessar e
 
 ## Diagrama de Fluxo
 
-![Diagram](https://github.com/tonsatomicos/bacen-ptax-data-processing/blob/main/assets/diagram.png?raw=true)
+![Diagram](https://github.com/tonsatomicos/bacen-ptax-data-processing/blob/main/assets/diagram_pipeline.png?raw=true)
 
 Sinta-se à vontade para clonar, adaptar e ajustar o projeto conforme necessário. Consulte as instruções abaixo, se precisar. :alien:
 
