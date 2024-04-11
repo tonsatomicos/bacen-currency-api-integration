@@ -91,8 +91,8 @@ class Collector:
             conn.rollback()
 
         finally:
-            if 'conn' in locals():
-                conn.close()                
+            if self.conn_postgres is not None():
+                self.conn_postgres.close()               
 
 def main():
     # Collector class configs
