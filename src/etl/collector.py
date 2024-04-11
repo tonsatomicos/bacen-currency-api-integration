@@ -32,13 +32,13 @@ class Collector:
                     self.dataframe = pd.json_normalize(df['value'])
                     self.collector_checkin = True
             else:
-                print('Failed to get data from API.')
+                print("Failed to get data from API.")
                 
         except requests.exceptions.RequestException as e:
-            print(f'Failed to get data from API. Error: {e}')
+            print(f"Failed to get data from API. Error: {e}")
         
         finally:
-            if 'response' in locals():
+            if "response" in locals():
                 response.close()
 
     def transform_data(self):
@@ -60,15 +60,15 @@ class Collector:
             self.transform_checkin = True
 
         except Exception as e:
-            print(f'Error when applying transformations: {e}')
+            print(f"Error when applying transformations: {e}")
 
     def authenticate_database(self):
         try:   
-            engine = create_engine(f'postgresql+psycopg2://{self.dbuser}:{self.dbpass}@{self.dblocal}/{self.dbname}')
+            engine = create_engine(f"postgresql+psycopg2://{self.dbuser}:{self.dbpass}@{self.dblocal}/{self.dbname}")
             self.conn_postgres = engine.connect()
 
         except Exception as e:
-                    print(f'An error occurred while connecting to the database: {e}')    
+            print(f"An error occurred while connecting to the database: {e}")    
 
     def load_data(self):
         try:  
@@ -87,23 +87,23 @@ class Collector:
                 conn.commit()
 
         except Exception as e:
-            print(f'Error when inserting: {e}')
+            print(f"Error when inserting: {e}")
             conn.rollback()
 
         finally:
             if self.conn_postgres is not None():
-                self.conn_postgres.close()               
+                self.conn_postgres.close()                
 
 def main():
     # Collector class configs
-    start_date = '01-01-2024'
-    end_date = '04-08-2024'
-    coin = 'EUR'
-    dbuser = 'teste'
-    dbpass = 'teste'
-    dbname = 'teste_db'
-    dblocal = 'localhost:5437'
-    dbtable = 'public.ptax'
+    start_date = "01-01-2024"
+    end_date = "04-08-2024"
+    coin = "EUR"
+    dbuser = "teste"
+    dbpass = "teste"
+    dbname = "teste_db"
+    dblocal = "localhost:5437"
+    dbtable = "public.ptax"
 
     # Collector class
     obj_collector = Collector(start_date, end_date, coin, dbuser, dbpass, dbname, dblocal, dbtable)    
