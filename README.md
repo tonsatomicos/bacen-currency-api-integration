@@ -15,7 +15,7 @@ Sinta-se à vontade para clonar, adaptar e ajustar o projeto conforme necessári
 
 ## Dependências do Projeto
 
-Este projeto foi desenvolvido utilizando o Poetry para gerenciamento de ambientes virtuais e bibliotecas.
+Este projeto foi desenvolvido utilizando o Poetry + Pyenv para gerenciamento de ambientes virtuais e bibliotecas.
 
 ### Bibliotecas Utilizadas
 
@@ -32,6 +32,7 @@ Você pode instalar as dependências manualmente, ou, utilizando o Poetry ou o P
 
 ```bash
 poetry config virtualenvs.in-project true
+pyenv local 3.12.1
 poetry env use 3.12.1
 poetry install
 
