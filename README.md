@@ -43,7 +43,7 @@ poetry install
 #### Utilizando Pip
 
 ```bash
-pip install pandas requests sqlalchemy psycopg2
+pip install -r requirements.txt
 
 ```
 
