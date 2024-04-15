@@ -1,0 +1,4 @@
+pandas==2.2.1 ; python_version >= "3.12" and python_version < "4.0"
+psycopg2==2.9.9 ; python_version >= "3.12" and python_version < "4.0"
+requests==2.31.0 ; python_version >= "3.12" and python_version < "4.0"
+sqlalchemy==2.0.29 ; python_version >= "3.12" and python_version < "4.0"

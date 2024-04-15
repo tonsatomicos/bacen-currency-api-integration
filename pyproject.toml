@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bacen-ptax-data-processing"
+name = "bacen-currency-api-integration"
 version = "0.1.0"
 description = ""
 authors = ["Ant4res <pr1v4t3.lm@gmail.com>"]
@@ -9,7 +9,6 @@ readme = "README.md"
 python = "^3.12"
 pandas = "^2.2.1"
 requests = "^2.31.0"
-jupyter = "^1.0.0"
 sqlalchemy = "^2.0.29"
 psycopg2 = "^2.9.9"
 
