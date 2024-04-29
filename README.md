@@ -9,7 +9,7 @@ Este projeto envolve o desenvolvimento de uma solução em Python para acessar e
 
 Utilizando a biblioteca requests para fazer as requisições HTTP e o Docker com PostgreSQL para armazenar os dados, buscando facilitar o acesso e análise dessas informações de forma direta e eficiente.
 
-## Diagrama de Fluxo
+## Projeto
 
 ![Diagram](https://github.com/tonsatomicos/bacen-ptax-data-processing/blob/main/assets/diagram_pipeline.png?raw=true)
 
