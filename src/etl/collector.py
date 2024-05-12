@@ -91,13 +91,13 @@ class Collector:
             conn.rollback()
 
         finally:
-            if self.conn_postgres is not None():
+            if self.conn_postgres is not None:
                 self.conn_postgres.close()                
 
 def main():
     # Collector class configs
-    start_date = "01-01-2024"
-    end_date = "04-08-2024"
+    start_date = "01-01-2015"
+    end_date = "12-05-2024"
     coin = "EUR"
     dbuser = "teste"
     dbpass = "teste"

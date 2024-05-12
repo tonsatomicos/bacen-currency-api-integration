@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   projeto-ptax:
-    container_name: projetos
+    container_name: postgres-database
     image: postgres:16.0
     environment:
       POSTGRES_USER: teste
