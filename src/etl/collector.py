@@ -84,11 +84,6 @@ class Collector:
                     WHERE {table_name}.valor_dia <> EXCLUDED.valor_dia;
                     """)
                 conn.execute(query)
-                conn.commit()
-
-        except Exception as e:
-            print(f"Error when inserting: {e}")
-            conn.rollback()
 
         finally:
             if self.conn_postgres is not None:
