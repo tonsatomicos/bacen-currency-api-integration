@@ -86,7 +86,7 @@ class Collector:
                 conn.execute(query)
 
         finally:
-            if self.conn_postgres is not None:
+            if self.conn_postgres:
                 self.conn_postgres.close()                
 
 def main():
